@@ -11,7 +11,7 @@
 
 <script setup>
 import TopTabRegion from "@/components/home/TopTabRegion.vue";
-import TabHome from "@/components/home/content/OutputChoice.vue";
+import TabHome from "@/components/home/content/TabHome.vue";
 import BottomTabRegion from "@/components/home/BottomTabRegion.vue";
 import { ref, onMounted } from "vue";
 

@@ -1,13 +1,14 @@
 <template>
-  <div class="Reupload-section">
-    <div class="robot-section">
+    <div class="Reupload-section">
         <img class="robot-img" src="@/components/home/content/assets/robot_icon.png" />
-        資料分析中......
+        已轉檔完成！
     </div>
-    <button class="pdf-input">
+    <div class="actions">
+          <button class="download-btn">下載Power Point</button>
+        </div>
+    <button class="pdf-input" @click="ReuploadPDF">
         重新匯入PDF
-      </button>
-    </div>
+    </button>
   </template>
   
   <script>
@@ -29,7 +30,7 @@
   </script>
   
   <style>
-  .Reupload-section {
+.Reupload-section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,28 +38,38 @@
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     font-size: 10px;
-    width: calc(100% - 500px);
+    width: calc(100% - 800px);
+    
   }
-  .robot-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: yellow; */
-  }
-  .robot-img{
+.robot-img{
     height: 30px;
     padding: 10px 10px 10px 10px;
   }
-  .pdf-input{
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.download-btn {
+  background-color: #91C5B5;
+  border: 1px solid white;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.pdf-input{
     background-color: #4285F4;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     margin-right: 10px;
-    margin-left: 400px;
+    margin-left: 500px;
     display: flex;
     align-items: center;
     border-radius: 10;
