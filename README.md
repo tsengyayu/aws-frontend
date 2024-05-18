@@ -27,6 +27,4 @@ npm run dev
 ```sh
 npm run build
 ```
-# cookie_vue
-# cookiediary-vue
-# cookiediary-vue
+
