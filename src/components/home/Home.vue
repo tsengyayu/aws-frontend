@@ -42,7 +42,7 @@ function handleSendMessenge(newMessenge){
     width: 100%;
   }
   .content-region {
-    background-color: blue ;
+    //background-color: blue ;
     width: 100%;
     height: calc(100% - 200px);
     display: flex;
