@@ -1,7 +1,7 @@
 <template>
     <!-- <div id="footer"> -->
     <div class="input-section">
-        <input v-model="message" type="text" placeholder="Input here..." />
+        <input v-model="message" type="text" placeholder="Input here..." v-on:keyup.enter="sendMessenges" />
         <button class="send-btn">
             <img @click="sendMessenges" src="@/components/home/content/assets/send_msg.png" />
         </button>
@@ -36,7 +36,7 @@ const emit = defineEmits(["sendMessenges"]);
     emit("sendMessenges",sendMessage);
     // console.log(sendMessage)
   }
-  </script>
+</script>
   
 <style>
 .input-section input {

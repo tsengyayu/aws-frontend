@@ -62,7 +62,9 @@
           <button class="action-btn" @click="changeContentType(4)">Methdology</button>
           <button class="action-btn" @click="changeContentType(4)">Conclusion</button> -->
         </div>
-    <button class="pdf-input" @click="changeContentType(4)">
+    <!-- <button class="send-btn" @click="changeContentType(4)" >
+    </button> -->
+    <button class="pdf-input" @click="changeContentType(0)">
         重新匯入PDF
     </button>
   </div>
@@ -196,6 +198,9 @@ function test(messenges){
 
 .messenge-section{
   width: calc(100%/2);
+  transform: translate(40px,0);
+  overflow-x: hidden;
+  overflow-y: scroll;
   /* transform: translate(400px,0); */
   /* background-color: red; */
 }
@@ -204,7 +209,7 @@ function test(messenges){
     align-items: center;
     justify-content: right; 
     background-color: #ffffff;
-    transform: translate(40px,0);
+    /* transform: translate(40px,0); */
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
